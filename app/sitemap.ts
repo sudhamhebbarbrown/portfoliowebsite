@@ -19,9 +19,6 @@ async function getNoteSlugs(dir: string) {
 }
 
 export default async function sitemap() {
-  const notesDirectory = path.join(process.cwd(), 'app', 'n');
-  const slugs = await getNoteSlugs(notesDirectory);
-
   const routes = ['', '/work', '/education', 'projects'].map((route) => ({
     url: `https://sudhamhebbar.com${route}`,
     lastModified: new Date().toISOString(),
