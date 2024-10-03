@@ -3,19 +3,20 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ViewTransitions } from 'next-view-transitions';
 import { Analytics } from '@vercel/analytics/react';
+import { url } from 'inspector';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.com'),
+  metadataBase: new URL('https://sudhamhebbar.com'),
   alternates: {
     canonical: '/',
   },
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Sudham Hebbar',
+    template: '%s | Sudham Hebbar',
   },
-  description: 'Frontend developer, optimist, community builder.',
+  description: 'Masters student at Brown University',
 };
 
 export default function RootLayout({
@@ -42,10 +43,10 @@ export default function RootLayout({
 
 function Footer() {
   const links = [
-    { name: '@leerob', url: 'https://x.com/leeerob' },
-    { name: 'youtube', url: 'https://www.youtube.com/@leerob' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/leeerob' },
-    { name: 'github', url: 'https://github.com/leerob' },
+    { name: 'resume', url: 'https://drive.google.com/file/d/1kORUU2Jo3v2i6g9M1T7MgRIjDop58fCQ/view?usp=drive_link' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/sudham-hebbar' },
+    { name: 'github', url: 'https://github.com/sudhamhebbarbrown' },
+    { name: 'email', url: 'mailto:sudham_hebbar@brown.edu'}
   ];
 
   return (

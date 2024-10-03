@@ -22,15 +22,10 @@ export default async function sitemap() {
   const notesDirectory = path.join(process.cwd(), 'app', 'n');
   const slugs = await getNoteSlugs(notesDirectory);
 
-  const notes = slugs.map((slug) => ({
-    url: `https://leerob.com/n/${slug}`,
+  const routes = ['', '/work', '/education', 'projects'].map((route) => ({
+    url: `https://sudhamhebbar.com${route}`,
     lastModified: new Date().toISOString(),
   }));
 
-  const routes = ['', '/work'].map((route) => ({
-    url: `https://leerob.com${route}`,
-    lastModified: new Date().toISOString(),
-  }));
-
-  return [...routes, ...notes];
+  return [...routes];
 }

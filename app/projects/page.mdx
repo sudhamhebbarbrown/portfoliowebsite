@@ -1,0 +1,39 @@
+import { AnimatedName } from '@/app/components/animated-name.tsx';
+
+export const metadata = {
+  title: 'Education',
+  alternates: {
+    canonical: '/education',
+  },
+};
+
+export function Small({ children }) {
+  return (
+    <small className="flex text-sm text-gray-500 -mt-3 mb-3">{children}</small>
+  );
+}
+
+# Work
+
+<AnimatedName />
+
+Here's a summary of my education so far.
+
+## Distributed Search engine
+
+<Small>Brown University (1370)</Small>
+I built a distributed computing system from the ground up, taking it from the initial setup all the way to cloud deployment on AWS. The focus was on creating a scalable, fault-tolerant architecture, and I also developed a custom serialization/deserialization system to make data exchange between nodes more efficient and reliable. I implemented things like an actor framework, an RPC system, and gossip protocols to keep everything running smoothly and responsive. For data processing, I set up map and reduce functions using shell scripts for real-time streaming. Finally, I put the system to the test with 10,000 concurrent users using Apache JMeter to make sure it could handle the load.
+
+
+## DinoDB
+
+<Small>Brown University (1270)</Small>
+I built a database called Dino DB from scratch, where I implemented features like paging, hashing, querying, B+ trees, joins, concurrency control, and recovery—all in Go. It was a great way to dive deep into database internals and understand how everything works under the hood. Every since then I have taken a deepdive into Postgres and it's distributed nature.
+
+
+## Music streaming service
+
+<Small>Brown University (1270)</Small>
+Curious about real-time streaming services like twitch and spotify, I developed a music streaming platform using Django, Next.js, and PostgreSQL that allows users to create playlists, like tracks, and stream music. I integrated secure user authentication with Auth0 and JWT tokens to manage logins and sessions. For handling the audio, I used AWS S3 for storage and streaming, ensuring smooth and efficient media delivery. I also set up real-time tracking of streams and likes using PostgreSQL, making sure the data stays accurate and scalable.
+
+
